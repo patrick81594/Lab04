@@ -1,0 +1,13 @@
+﻿@model System.DateTime
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@ViewData["TimeOfDay"]</h1>
+<!--Do the displaying of data here-->
+<p><h3>The time is @Model.ToLongTimeString() @Model.Kind  on @Model.ToLongDateString().</h3></p>
+<p>@ViewData["DaysLeft"]<p/>
+
+
+<p><a href="/Lab4/Page2" class="btn btn-lg btn-info">Go to Page 2</a></p>
+
